@@ -1,0 +1,1 @@
+The Chrome extension condenses YouTube videos into text summaries, available in Telugu, Hindi, and English. Users can effortlessly switch languages, promoting inclusivity and accessibility. With a streamlined interface, users save time and grasp key insights efficiently, enhancing their browsing experience.
