@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Youtube Transcript Summariser</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdnjs.cloudflare.com;">
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            width: max-content;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: large;
+            cursor: pointer;
+        }
+        button[disabled] {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+        p {
+            font-size: medium;
+        }
+        /* Style for the button container containing Summarise and Download buttons */
+        .action-button-container {
+            text-align: center;
+        }
+        /* Style for Summarise and Download buttons to make them red */
+        .red-button {
+            background-color: red;
+            border-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Youtube Transcript Summariser</h1>
+    
+    <!-- Button container for improved alignment -->
+    <div class="button-container">
+        <label for="telugu" class="radio-label">
+          <input id="telugu" type="radio" name="language" value="telugu"> Telugu
+        </label>
+      
+        <label for="hindi" class="radio-label">
+          <input id="hindi" type="radio" name="language" value="hindi"> Hindi
+        </label>
+      
+        <label for="english" class="radio-label">
+          <input id="english" type="radio" name="language" value="english"> English
+        </label>
+      </div>
+    
+    <!-- Button container for Summarise and Download buttons with previous alignment -->
+    <div class="action-button-container">
+        <button id="summarise" type="button" class="red-button">Summarise</button>
+        <button id="download" type="button" class="red-button">Download</button>
+    </div>
+    
+    <br/>
+    <p id="output"></p>
+    
+    <script type="module" src="popup.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script> -->
+    
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name":"Shravya-YouTube Summarizer",
+  "version": "1.0",
+  "description": "Your extension description",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["mammoth/browser.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
